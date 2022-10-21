@@ -55,6 +55,7 @@ try{
     appointment.user = req.dataAuth.userId
     appointment.veterinary = req.body.veterinaire
     appointment.description = req.body.description
+    appointment.hour = req.body.hour
     appointment.save()
 
     res.status(200).send(appointment)

@@ -3,6 +3,7 @@ const postSchema = mongoose.Schema({
     description:String,
     images : [String],
     date:{type:Date, required:true, default:new Date()},
+    categorie:{type:String,required:false},
     user : {
             type : mongoose.Schema.Types.ObjectId,
             ref:"User"
